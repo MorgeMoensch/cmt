@@ -1,0 +1,243 @@
+/*Reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: "Helvetica Neue Extended";
+    src: url("fonts/helvetica-neue-medium-extended.woff2")
+}
+
+@font-face {
+    font-family: "Helvetica Neue Light";
+    src: url("fonts/helvetica-neue-wo1-66-medium-lt.woff2")
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("fonts/helvetica-neue.woff2")
+}
+
+@font-face {
+    font-family: "Helvetica Neue Lt";
+    src: url("fonts/helvetica-neue-lt.woff2")
+}
+
+@font-face {
+    font-family: "Helvetica Neue Ultra Light";
+    src: url("fonts/helvetica-neue-ultra-light.woff2")
+}
+
+@font-face {
+    font-family: "Helvetica Neue Obl";
+    src: url("fonts/helvetica-neue-wo1-87-hv-cn-obl.woff2")
+}
+
+@font-face {
+    font-family: "Nimbus Sans";
+    src: url("fonts/nimbus-sans.woff2")
+}
+
+
+body {
+    background-color: #A8A9AD;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-family: "Helvetica Neue Extended", serif;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+}
+
+p {
+    font-family: "Nimbus Sans", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+div {
+    font-family: "Nimbus Sans", sans-serif;
+}
+
+nav div {
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 2em;
+}
+
+nav {
+    width: 100vw;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: beige;
+    align-items: center;
+}
+
+#logo {
+    max-width: 20vw;
+    margin-left: 4em;
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    max-height: 5em;
+    margin-right: 1em;
+}
+
+#navbar {
+    max-width: 55vw;
+    min-width: 40vw;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 4em;
+}
+
+#navbar div {
+    display: inline-block;
+}
+
+section {
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 4em;
+    margin-top: 4em;
+    background-color: white;
+}
+
+section h1, h2, p {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+
+#home-images {
+    height: 40vh;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#home-images div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#home-images div figure {
+    width: 20vw;
+    height: 40vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+#home-images figcaption {
+    background-color: rgba(220, 221, 227, 0.58);
+    height: 3.5em;
+    position: relative;
+    bottom: -33vh;
+    padding-top: 0.7em;
+}
+
+#home-images p {
+    margin-left: 3em;
+    margin-right: 0;
+    width: calc(100% - 3em);
+}
+
+#home-images .home-images-title {
+    font-family: "Helvetica Neue Extended";
+}
+
+#special-tradition {
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+#special-tradition > div {
+    width: 20vw;
+}
+
+#special-tradition img {
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
+}
+
+.cmt-block {
+    border: 2px solid #A8A9AD;
+    padding: 1em;
+}
