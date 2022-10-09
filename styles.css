@@ -289,3 +289,10 @@ figure img {
     margin-top: 0.2em;
     margin-bottom: 0.2em;
 }
+
+.cmt-block-video {
+}
+
+.cmt-block-video iframe {
+    aspect-ratio: 16 / 9;
+}
