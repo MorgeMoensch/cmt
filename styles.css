@@ -288,6 +288,8 @@ figure img {
 
     margin-top: 0.2em;
     margin-bottom: 0.2em;
+    text-decoration: none;
+    color: black;
 }
 
 .cmt-block-video {
@@ -341,7 +343,7 @@ figure img {
     margin-bottom: 1em;
 }
 
-#contact p, a {
+#contact p,  #contact a {
     margin-left: 2vw;
 }
 
@@ -353,4 +355,48 @@ figure img {
 
 .mb-1 {
     margin-bottom: 1em;
+}
+
+.back-button {
+    height: 1em;
+    bottom: 0;
+}
+
+#next-image, #previous-image {
+    height: 2em;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+#next-image {
+    right: 0;
+    position: relative;
+}
+
+.gallery {
+    height: 50em;
+}
+
+.gallery-image-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40vh;
+    width: 45vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-image {
+    max-width: 85%;
+    max-height: 70%;
+    position: relative;
+}
+
+#gallery-image-description {
+    width: 45vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }

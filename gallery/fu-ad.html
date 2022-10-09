@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>König Fu'ad II | Gallery | Chalet Muri Talk</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css"/>
+    <script src="../gallery.js"></script>
+    <script>
+        window.onload = function () {
+            console.log("hööö")
+            initializeGallery("2022-06-30_fu-ad", 6)
+
+        };
+    </script>
+</head>
+<body>
+<nav>
+    <div id="logo">
+        <img src="../img/Logo-redv2withouttxt.png"/>
+        <div>
+            <div>Chalet Muri Talks</div>
+            <div>Serving the Culture of Dialog</div>
+        </div>
+    </div>
+    <div id="navbar">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="talks.html">Chalet Muri Talks</a></div>
+        <div><a href="online.html">Chalet Muri Online</a></div>
+        <div><a href="claudio-righetti.html">Claudio Righetti</a></div>
+        <div><a href="media.html">Media</a></div>
+        <div><a href="contact.html">Contact</a></div>
+    </div>
+</nav>
+<content>
+    <section class="gallery">
+        <a href="../talks.html" style="display: block; color: black; padding-top: 2em; padding-left: 2em;"><img
+                src="../img/arrow-left.svg" class="back-button"/>Back</a>
+        <div style="margin-top: 2em; padding-bottom: 2em">
+
+        </div>
+
+        <div style="height: 40vh">
+            <div class="gallery-image-wrapper">
+                <img src="../img/arrow-left.svg" id="previous-image"/>
+                <img id="current-image" class="gallery-image"/>
+                <img src="../img/arrow-right.svg" id="next-image"/>
+            </div>
+        </div>
+
+        <p id="gallery-image-description">Some Description...</p>
+
+    </section>
+</content>
+
+</body>
+<footer>
+    <div>© 2022 Righetti & Partner GmbH</div>
+</footer>
+</html>
