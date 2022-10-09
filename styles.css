@@ -321,6 +321,36 @@ figure img {
     margin-left: 1vw;
 }
 
+#contact {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-image  {
+    width: 50%;
+    margin-bottom: -3px;
+}
+
+#contact-image img {
+    width: 100%;
+}
+
+#contact h1 {
+    margin-left: 2vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#contact p, a {
+    margin-left: 2vw;
+}
+
+#contact-details {
+    margin-top: 2em;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
 .mb-1 {
     margin-bottom: 1em;
 }
