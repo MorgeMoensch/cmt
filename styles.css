@@ -191,12 +191,12 @@ figure img {
 }
 
 #special-tradition > div {
-    width: 20vw;
+    width: 40%;
 }
 
 #special-tradition img {
-    width: 20vw;
-    height: 20vw;
+    width: 15em;
+    height: 15em;
     overflow: hidden;
 }
 
@@ -206,10 +206,14 @@ figure img {
 }
 
 .opener-image {
-
+    margin-top: 3em;
+    margin-left: 4em;
+    margin-right: 4em;
+    max-width: 120em;
 }
 
 .opener-image img {
+    display: block;
     width: 100%;
     height: 60vh;
     object-fit: cover;
@@ -378,5 +382,37 @@ figure img {
     max-width: 100%;
     height: 10vw;
     width: 10vw;
+    object-fit: cover;
+}
+
+#home-feed {
+    display: block;
+    width: 100%;
+    max-width: 120em;
+}
+
+#home-feed section {
+    display: flex;
+}
+
+#home-feed section > div {
+    width: 50%;
+}
+
+#home-feed section > div > p, h2, h1 {
+    margin-left: 1em !important;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+
+#home-feed section img {
+    max-width: 100%;
+}
+
+#home-feed .mood-image {
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 100%;
+    max-height: 90vh;
     object-fit: cover;
 }
