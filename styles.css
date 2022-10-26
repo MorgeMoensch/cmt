@@ -99,6 +99,7 @@ nav div {
 nav a {
     text-decoration: none;
     color: black;
+    margin-left: 1em;
 }
 
 footer {
@@ -130,6 +131,10 @@ nav {
 #logo img {
     max-height: 5em;
     margin-right: 1em;
+}
+
+#logo > div > div {
+    width: 15em;
 }
 
 #navbar {
@@ -372,7 +377,9 @@ figure img {
     left: 50%;
     transform: translateX(-50%);
     height: 40vh;
+    min-height: 15em;
     width: 45vh;
+    min-width: 40em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -381,11 +388,14 @@ figure img {
 .gallery-image {
     max-width: 85%;
     max-height: 70%;
+    min-height: 20em;
+    min-width:28em;
     position: relative;
 }
 
 #gallery-image-description {
     width: 45vh;
+    min-width: 28em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
