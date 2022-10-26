@@ -44,40 +44,21 @@ table {
 }
 
 /* FONTS */
-
 @font-face {
-    font-family: "Helvetica Neue Extended";
-    src: url("fonts/helvetica-neue-medium-extended.woff2")
-}
-
-@font-face {
-    font-family: "Helvetica Neue Light";
-    src: url("fonts/helvetica-neue-wo1-66-medium-lt.woff2")
-}
-
-@font-face {
-    font-family: "Helvetica Neue";
-    src: url("fonts/helvetica-neue.woff2")
-}
-
-@font-face {
-    font-family: "Helvetica Neue Lt";
-    src: url("fonts/helvetica-neue-lt.woff2")
-}
-
-@font-face {
-    font-family: "Helvetica Neue Ultra Light";
-    src: url("fonts/helvetica-neue-ultra-light.woff2")
-}
-
-@font-face {
-    font-family: "Helvetica Neue Obl";
-    src: url("fonts/helvetica-neue-wo1-87-hv-cn-obl.woff2")
+    font-family: "Nimbus Sans";
+    src: url("fonts/nimbus-sans-l_regular.woff2");
 }
 
 @font-face {
     font-family: "Nimbus Sans";
-    src: url("fonts/nimbus-sans.woff2")
+    src: url("fonts/nimbus-sans-l_bold.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Nimbus Sans";
+    src: url("fonts/nimbus-sans-l_italic.woff2");
+    font-style: italic;
 }
 
 
@@ -249,18 +230,55 @@ figure img {
     object-fit: cover;
 }
 
+.cmt-block {
+    text-decoration: none;
+    color: black;
+}
+
+.cmt-block .img-wrap {
+    position: relative;
+}
+
+.cmt-block .img-wrap .img-hover-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    height: 20vw;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "Nimbus Sans", serif;
+    font-size: 1em;
+}
+
+.img-wrap:hover .img-hover-description {
+    visibility: visible;
+}
+
 .cmt-block-date {
     font-weight: lighter;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    margin-bottom: 0.2em;
 }
 .cmt-block-title {
     font-weight: bold;
     font-size: 1.2em;
-
     margin-top: 0.2em;
     margin-bottom: 0.2em;
     text-decoration: none;
     color: black;
+}
+
+.cmt-block-subtitle {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .cmt-block-video {
