@@ -489,6 +489,7 @@ figure img {
 
     section h1, section h2, section p {
         margin-left: 0;
+        margin-right: 0;
     }
 
     nav {
@@ -496,6 +497,7 @@ figure img {
         position: fixed;
         background-color: white;
         top: 0;
+        z-index: 999;
     }
 
     .hamburger-nav {
@@ -548,11 +550,29 @@ figure img {
         width: 90vw;
     }
 
+    .cmt-block-video > .cmt-block-date {
+        font-size: 1.5em
+    }
+
     .cmt-block-date {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .cmt-block-title {
         font-size: 2em;
+    }
+
+    .cmt-block-subtitle {
+        font-size: 1.5em;
+    }
+
+    .cmt-block img {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .gallery-overview > a {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
