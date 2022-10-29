@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <title>Chalet Muri Talk</title>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="hamburgers.css"/>
+    <script>
+        let hamburgerIsExpanded = false;
+        function hamburgerMenuClicked() {
+            let hamburger = document.getElementById("hamburger");
+            let menu = document.getElementById("hamburger-menu");
+            hamburgerIsExpanded = !hamburgerIsExpanded;
+            if(hamburgerIsExpanded) {
+                hamburger.classList.add("is-active");
+                menu.classList.remove("d-none")
+            } else {
+                hamburger.classList.remove("is-active");
+                menu.classList.add("d-none")
+            }
+        }
+    </script>
 </head>
 <body>
 <nav>
@@ -21,6 +37,27 @@
         <div><a href="claudio-righetti.html">Claudio Righetti</a></div>
         <div><a href="media.html">Media</a></div>
         <div><a href="contact.html">Contact</a></div>
+    </div>
+
+    <div id="navbar-mobile">
+        <button class="hamburger hamburger--collapse" type="button" onclick="hamburgerMenuClicked()" id="hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div class="hamburger-nav d-none" id="hamburger-menu">
+            <div class="hamburger-nav-wrapper">
+                <ul class="ms-auto">
+                    <li style="font-weight: bolder;"><a href="index.html">Home</a></li>
+                    <li><a href="talks.html">Chalet Muri Talks</a></li>
+                    <li><a href="online.html">Chalet Muri Online</a></li>
+                    <li><a href="claudio-righetti.html">Claudio Righetti</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </nav>
 <content id="home-feed">
