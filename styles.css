@@ -470,6 +470,27 @@ figure img {
         display: none;
     }
 
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p, a {
+        font-size: 2rem !important;
+    }
+
+    h1, h2, p, a {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    section h1, section h2, section p {
+        margin-left: 0;
+    }
+
     nav {
         height: 8em;
     }
