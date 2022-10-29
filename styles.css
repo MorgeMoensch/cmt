@@ -485,6 +485,7 @@ figure img {
     }
 
     .hamburger-nav li {
+        margin-top: 1em;
         margin-bottom: 1em;
         margin-right: 1em;
     }
