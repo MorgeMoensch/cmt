@@ -589,4 +589,24 @@ figure img {
     #home-feed section > div {
         width: 90vw;
     }
+
+    .cr-download-overview {
+        flex-wrap: wrap;
+        padding-left: 0;
+        padding-right: 0;
+        gap: 2em;
+    }
+
+    .cr-download-overview > .cr-block {
+        flex-basis: 100%;
+    }
+
+    .cr-block img {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .cr-block figcaption {
+        font-size: 40px;
+    }
 }
