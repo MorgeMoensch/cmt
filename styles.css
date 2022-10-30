@@ -102,6 +102,10 @@ nav a {
     margin-left: 1em;
 }
 
+#navbar-mobile {
+    display: none;
+}
+
 .d-none {
     display: none;
 }
@@ -530,6 +534,7 @@ figure img {
     }
 
     #navbar-mobile {
+        display: unset;
         margin-right: 1em;
     }
 
