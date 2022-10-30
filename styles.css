@@ -471,15 +471,19 @@ figure img {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 60px;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 45px;
     }
 
     p, a {
-        font-size: 2rem !important;
+        font-size: 40px !important;
+    }
+
+    figcaption {
+        font-size: 30px;
     }
 
     h1, h2, p, a {
@@ -574,5 +578,15 @@ figure img {
     .gallery-overview > a {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    #home-feed section {
+        flex-wrap: wrap;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    #home-feed section > div {
+        width: 90vw;
     }
 }
