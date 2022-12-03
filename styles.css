@@ -186,6 +186,7 @@ figure img {
 
 #special-tradition > div {
     width: 40%;
+    min-width: 20vw;
 }
 
 #special-tradition img {
