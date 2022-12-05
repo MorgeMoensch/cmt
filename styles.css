@@ -415,6 +415,7 @@ figure img {
     padding-right: 15vw;
     display: flex;
     align-content: space-between;
+    justify-content: center;
 }
 
 .cr-block {
