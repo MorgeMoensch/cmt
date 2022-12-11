@@ -449,10 +449,12 @@ figure img {
 #home-feed section {
     display: flex;
     padding: 1em;
+    flex-wrap: wrap;
 }
 
 #home-feed section > div {
     width: 50%;
+    flex: 1;
 }
 
 #home-feed > section > div > p, #home-feed > section > div > h2, #home-feed > section > div > h1 {
