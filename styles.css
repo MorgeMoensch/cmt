@@ -171,6 +171,10 @@ section {
     background-color: white;
 }
 
+figcaption {
+    font-size: 80%;
+}
+
 section h1, h2, p {
     margin-left: 15vw;
     margin-right: 15vw;
