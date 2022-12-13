@@ -261,11 +261,12 @@ figure img {
     right: 0;
     background: rgba(0, 0, 0, 0.4);
     visibility: hidden;
-    height: 20vw;
-    text-align: center;
+    height: calc(20vw - 2em);
+    padding: 1em;
+    text-align: left;
     justify-content: center;
     display: flex;
-    align-items: center;
+    align-items: end;
     color: white;
     font-family: "Nimbus Sans", serif;
     font-size: 1em;
