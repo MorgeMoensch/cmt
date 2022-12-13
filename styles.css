@@ -68,6 +68,11 @@ body {
     overflow-x: hidden;
 }
 
+content {
+    margin-top: 6em;
+    display: block;
+}
+
 h1, h2 {
     font-family: "Nimbus Sans", serif;
 }
