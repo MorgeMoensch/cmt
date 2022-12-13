@@ -172,6 +172,7 @@ section {
 }
 
 figcaption {
+    margin-top: 0.5em;
     font-size: 80%;
 }
 
