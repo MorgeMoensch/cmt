@@ -7,7 +7,6 @@
     <script src="../gallery.js"></script>
     <script>
         window.onload = function () {
-            console.log("hööö")
             initializeGallery("2022-06-30_fu-ad", 6)
 
         };
@@ -32,23 +31,29 @@
     </div>
 </nav>
 <content>
-    <section class="gallery">
+    <section>
         <a href="../talks.html" style="display: block; color: black; padding-top: 2em; padding-left: 2em;"><img
-                src="../img/arrow-left.svg" class="back-button"/>Back</a>
-        <div style="margin-top: 2em; padding-bottom: 2em">
-
+                src="../img/arrow-left.svg" class="back-button"/></a>
+    </section>
+    <section style="display: flex;">
+        <div>
+            <img src="../img/arrow-left.svg" id="previous-image"/>
+        </div>
+        <div>
+            <img id="current-image" class="gallery-image"/>
+        </div>
+        <div>
+            <p id="gallery-image-description">Some Description...</p>
+        </div>
+        <div>
+            <img src="../img/arrow-right.svg" id="next-image"/>
         </div>
 
         <div style="height: 40vh; min-height: 20em">
             <div class="gallery-image-wrapper">
-                <img src="../img/arrow-left.svg" id="previous-image"/>
-                <img id="current-image" class="gallery-image"/>
-                <img src="../img/arrow-right.svg" id="next-image"/>
+
             </div>
         </div>
-
-        <p id="gallery-image-description">Some Description...</p>
-
     </section>
 </content>
 
