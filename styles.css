@@ -401,8 +401,7 @@ figure img {
 
 #gallery-image-description {
     width: 45vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
     text-align: left;
 }
 
