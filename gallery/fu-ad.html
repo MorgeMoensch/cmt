@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>König Fu'ad II | Gallery | Chalet Muri Talk</title>
     <link rel="stylesheet" type="text/css" href="../styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../hamburgers.css"/>
+    <script src="../mobileMenu.js"></script>
     <script src="../gallery.js"></script>
     <script>
         window.onload = function () {
@@ -15,7 +17,7 @@
 <body>
 <nav>
     <div id="logo">
-        <img src="../img/0001.jpg"/>
+        <img src="/img/0001.jpg"/>
         <div>
             <div>Chalet Muri Talks</div>
             <div>Serving the Culture of Dialog</div>
@@ -29,11 +31,32 @@
         <div><a href="/media.html">Media</a></div>
         <div><a href="/contact.html">Contact</a></div>
     </div>
+
+    <div id="navbar-mobile">
+        <button class="hamburger hamburger--collapse" type="button" onclick="hamburgerMenuClicked()" id="hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div class="hamburger-nav d-none" id="hamburger-menu">
+            <div class="hamburger-nav-wrapper">
+                <ul class="ms-auto">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/talks.html">Chalet Muri Talks</a></li>
+                    <li><a href="/online.html">Chalet Muri Online</a></li>
+                    <li><a href="/claudio-righetti.html">Claudio Righetti</a></li>
+                    <li><a href="/media.html">Media</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </nav>
-<content>
-    <section style="display: flex; justify-content: space-between; gap: 0.5em; margin-top: 10em;">
-        <div style="flex-basis: 60%; display: flex; justify-content: center; flex-wrap: wrap;">
-            <div style="display: flex; justify-content: space-between; flex-basis: 100%;">
+<content class="gallery">
+    <section>
+        <div class="image-wrapper">
+            <div class="navigation-wrapper">
                 <div>
                     <img src="../img/arrow-left.svg" id="previous-image"/>
                 </div>
@@ -45,8 +68,8 @@
 
             <img id="current-image" class="gallery-image"/>
         </div>
-        <div style="flex-basis: 20%; padding-top: 2em;">
-            <p id="gallery-image-description" style="text-align: center; line-height: 25px; font-size: 1em;">Some Description...</p>
+        <div class="description-wrapper">
+            <p id="gallery-image-description">Some Description...</p>
         </div>
 
     </section>

@@ -392,6 +392,37 @@ figure img {
     height: 50em;
 }
 
+.gallery > section {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+    margin-top: 10em;
+}
+
+.gallery .image-wrapper {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .image-wrapper .navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+
+.gallery .description-wrapper {
+    flex-basis: 20%;
+    padding-top: 2em;
+}
+
+.gallery .description-wrapper #gallery-image-description {
+    text-align: center;
+    line-height: 25px;
+    font-size: 1em;
+}
+
 .gallery-image {
     max-width: 85%;
     max-height: 80vh;
@@ -582,6 +613,36 @@ figure img {
     .gallery-overview > a {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .gallery {
+        min-height: 80vh;
+        margin-top: 15em;
+    }
+
+    .gallery > section {
+        flex-wrap: wrap;
+    }
+
+    .gallery .image-wrapper {
+        flex-basis: 100%;
+    }
+
+    .gallery .image-wrapper .navigation-wrapper {
+        margin-bottom: 3em;
+    }
+
+    #next-image, #previous-image {
+        height: 5em;
+    }
+
+    .gallery .description-wrapper {
+        flex-basis: 100%;
+    }
+
+    .gallery .description-wrapper #gallery-image-description {
+        width: 100%;
+        line-height: 40px;
     }
 
     #home-feed section {
