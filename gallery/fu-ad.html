@@ -31,23 +31,24 @@
     </div>
 </nav>
 <content>
-    <section>
-        <a href="../talks.html" style="display: block; color: black; padding-top: 2em; padding-left: 2em; text-decoration: none;"><img
-                src="../img/arrow-left.svg" class="back-button"/> Übersicht</a>
-    </section>
-    <section style="display: flex; justify-content: space-between; gap: 0.5em;">
-        <div>
-            <img src="../img/arrow-left.svg" id="previous-image"/>
-        </div>
-        <div style="flex-basis: 60%">
+    <section style="display: flex; justify-content: space-between; gap: 0.5em; margin-top: 10em;">
+        <div style="flex-basis: 60%; display: flex; justify-content: center; flex-wrap: wrap;">
+            <div style="display: flex; justify-content: space-between; flex-basis: 100%;">
+                <div>
+                    <img src="../img/arrow-left.svg" id="previous-image"/>
+                </div>
+                <a href="../talks.html" style="display: block; color: black; text-decoration: none;"> Zur Übersicht</a>
+                <div>
+                    <img src="../img/arrow-right.svg" id="next-image"/>
+                </div>
+            </div>
+
             <img id="current-image" class="gallery-image"/>
         </div>
-        <div style="flex-basis: 30%">
-            <p id="gallery-image-description">Some Description...</p>
+        <div style="flex-basis: 20%; padding-top: 2em;">
+            <p id="gallery-image-description" style="text-align: center; line-height: 25px; font-size: 1em;">Some Description...</p>
         </div>
-        <div>
-            <img src="../img/arrow-right.svg" id="next-image"/>
-        </div>
+
     </section>
 </content>
 
