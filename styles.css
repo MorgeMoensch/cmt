@@ -379,7 +379,6 @@ figure img {
 #next-image, #previous-image {
     height: 2em;
     position: relative;
-    margin-right: 1em;
 }
 
 #next-image {
