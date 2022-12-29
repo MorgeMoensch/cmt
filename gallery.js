@@ -29,6 +29,7 @@ async function initializeGallery(galleryName, numberOfImages) {
     prevNavigator = document.getElementById('previous-image');
     prevNavigator.addEventListener('mousedown', previousImage);
     checkNavigationVisiblity()
+    preloadNextImage()
 }
 
 function previousImage() {
@@ -50,6 +51,7 @@ function nextImage() {
     let description = document.getElementById('gallery-image-description');
     description.innerText = descriptions[currentImageNr - 1];
     checkNavigationVisiblity();
+    preloadNextImage()
 }
 
 function checkNavigationVisiblity() {
@@ -64,4 +66,9 @@ function checkNavigationVisiblity() {
     } else {
         nextNavigator.style.visibility = ""
     }
+}
+
+function preloadNextImage() {
+    let img = new Image();
+    img.src = "https://media.mtts.ch/righetti/images/gallery/" + currentGallery + "/img (" + (currentImageNr + 1) + ").webp";
 }
