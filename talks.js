@@ -31,7 +31,7 @@ function createTalkDOMElement(publication) {
     let date = document.createElement('div')
 
     wrapper.classList.add('cmt-block');
-    wrapper.href = "gallery/fu-ad.html";
+    wrapper.href = `gallery/${publication.id}.html`;
 
     imageWrapper.classList.add("img-wrap")
     image.src = `https://media.mtts.ch/righetti/images/gallery/thumbnails/${publication.id}/img (1).webp`

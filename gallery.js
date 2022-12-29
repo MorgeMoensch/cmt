@@ -5,27 +5,23 @@ var numberOfImages = 0;
 let prevNavigator;
 let nextNavigator;
 
-const descriptions = [
-    "",
-    "S.M. König Fu’ad II von Ägypten, I.K.H. Prinzessin Léa von Belgien, S.E. Wael Elsayed Gad, Botschafter von Ägypten in der Schweiz, Gastgeber Claudio Righetti",
-    "Begrüssung der Gäste",
-    "Giovanni S. Rondanini, Vize-Präsident Le Club des Leaders, Gastgeber Claudio Righetti, Tracey Amon, Jean-Sébastien Robine, Präsident Le Club des Leaders",
-    "S.M. König Fu’ad II von Ägypten und I.K.H. Prinzessin Léa von Belgien – beim anschliessenden Diner im Cercle de la Grande Société de Berne",
-    "S.M. König Fu’ad II von Ägypten, Martin Schlup (Grossratspräsident Kanton Bern) mit Partnerin Monika Flükiger",
-    "Diner Cercle de la Grande Société de Berne "
-]
+let descriptions = [];
 
 
-function initializeGallery(galleryName, numberOfImages) {
+async function initializeGallery(galleryName, numberOfImages) {
+    await fetch(`/resources/galleryDescriptions/${galleryName}.json`).then(response => response.json()).then(result => {
+        descriptions = result.descriptions;
+    }).catch(e => console.log("something went wrong."))
+
     currentGallery = galleryName;
     currentImageNr = 1;
     this.numberOfImages = numberOfImages;
 
     let currentImage = document.getElementById('current-image');
-    currentImage.src = "/img/talks/" + currentGallery + "/" + currentImageNr + ".jpg";
+    currentImage.src = "https://media.mtts.ch/righetti/images/gallery/" + currentGallery + "/img (" + currentImageNr + ").webp";
 
     let description = document.getElementById('gallery-image-description');
-    description.innerText = descriptions[currentImageNr]
+    description.innerText = descriptions[currentImageNr - 1]
 
 
     nextNavigator = document.getElementById('next-image');
@@ -38,10 +34,10 @@ function initializeGallery(galleryName, numberOfImages) {
 function previousImage() {
     let currentImage = document.getElementById('current-image');
     currentImageNr--;
-    currentImage.src = "/img/talks/" + currentGallery + "/" + currentImageNr + ".jpg";
+    currentImage.src = "https://media.mtts.ch/righetti/images/gallery/" + currentGallery + "/img (" + currentImageNr + ").webp";
 
     let description = document.getElementById('gallery-image-description');
-    description.innerText = descriptions[currentImageNr]
+    description.innerText = descriptions[currentImageNr - 1]
     checkNavigationVisiblity();
 }
 
@@ -49,10 +45,10 @@ function nextImage() {
     console.log("moin")
     let currentImage = document.getElementById('current-image');
     currentImageNr++;
-    currentImage.src = "/img/talks/" + currentGallery + "/" + currentImageNr + ".jpg";
+    currentImage.src = "https://media.mtts.ch/righetti/images/gallery/" + currentGallery + "/img (" + currentImageNr + ").webp";
 
     let description = document.getElementById('gallery-image-description');
-    description.innerText = descriptions[currentImageNr];
+    description.innerText = descriptions[currentImageNr - 1];
     checkNavigationVisiblity();
 }
 

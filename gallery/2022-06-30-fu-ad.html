@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>König Fu'ad II | Gallery | Chalet Muri Talk</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../hamburgers.css"/>
+    <script src="../mobileMenu.js"></script>
+    <script src="../gallery.js"></script>
+    <script>
+        window.onload = function () {
+            initializeGallery("2022-06-30-fu-ad", 6)
+        };
+    </script>
+</head>
+<body>
+<nav>
+    <div id="logo">
+        <img src="/img/0001.jpg"/>
+        <div>
+            <div>Chalet Muri Talks</div>
+            <div>Serving the Culture of Dialog</div>
+        </div>
+    </div>
+    <div id="navbar">
+        <div><a href="/index.html">Home</a></div>
+        <div><a href="/talks.html">Chalet Muri Talks</a></div>
+        <div><a href="/online.html">Chalet Muri Online</a></div>
+        <div><a href="/claudio-righetti.html">Claudio Righetti</a></div>
+        <div><a href="/media.html">Media</a></div>
+        <div><a href="/contact.html">Contact</a></div>
+    </div>
+
+    <div id="navbar-mobile">
+        <button class="hamburger hamburger--collapse" type="button" onclick="hamburgerMenuClicked()" id="hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div class="hamburger-nav d-none" id="hamburger-menu">
+            <div class="hamburger-nav-wrapper">
+                <ul class="ms-auto">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/talks.html">Chalet Muri Talks</a></li>
+                    <li><a href="/online.html">Chalet Muri Online</a></li>
+                    <li><a href="/claudio-righetti.html">Claudio Righetti</a></li>
+                    <li><a href="/media.html">Media</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<content class="gallery">
+    <section>
+        <div class="image-wrapper">
+            <div class="navigation-wrapper">
+                <div>
+                    <img src="../img/arrow-left.svg" id="previous-image"/>
+                </div>
+                <a href="../talks.html" style="display: block; color: black; text-decoration: none;"> Zur Übersicht</a>
+                <div>
+                    <img src="../img/arrow-right.svg" id="next-image"/>
+                </div>
+            </div>
+
+            <img id="current-image" class="gallery-image"/>
+        </div>
+        <div class="description-wrapper">
+            <p id="gallery-image-description">Some Description...</p>
+        </div>
+
+    </section>
+</content>
+
+</body>
+<footer>
+    <div>© 2022 Righetti & Partner GmbH</div>
+</footer>
+</html>
