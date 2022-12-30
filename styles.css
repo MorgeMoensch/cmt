@@ -261,7 +261,7 @@ figure img {
     position: relative;
 }
 
-.cmt-block .img-wrap .img-hover-description {
+.cmt-block .img-wrap .img-hover-description, .img-hover-description-download {
     position: absolute;
     top: 0;
     left: 0;
@@ -279,7 +279,11 @@ figure img {
     font-size: 1em;
 }
 
-.img-wrap:hover .img-hover-description {
+.img-hover-description-download {
+    align-items: center;
+}
+
+.img-wrap:hover .img-hover-description, .img-wrap:hover .img-hover-description-download {
     visibility: visible;
 }
 
