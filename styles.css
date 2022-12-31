@@ -539,7 +539,7 @@ figure img {
     }
 
     nav {
-        height: 8em;
+        height: 9rem;
         position: fixed;
         background-color: white;
         top: 0;
@@ -549,10 +549,10 @@ figure img {
     .hamburger-nav {
         position: absolute;
         right: 0;
-        top: 4em;
+        top: 9rem;
 
         background-color: white;
-        font-size: 2em;
+        font-size: 3rem;
         box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
     }
 
@@ -567,7 +567,7 @@ figure img {
     }
 
     #logo img {
-        max-height: 4em;
+        height: 9rem;
         margin-right: 0.5em;
     }
 
