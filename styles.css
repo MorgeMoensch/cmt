@@ -713,6 +713,10 @@ figure img {
         margin-bottom: 0;
     }
 
+    #media-section-wrapper {
+        margin-top: 10rem !important;
+    }
+
     #contact {
         flex-wrap: wrap;
     }
